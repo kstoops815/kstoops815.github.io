@@ -1,0 +1,22 @@
+nav {
+	list-style: none;
+	background-color: darksalmon;
+	padding: 1%;
+	text-align: center;
+}
+
+nav li {
+	display: inline;
+	padding-right: 5%;
+}
+
+nav a:hover {
+	background-color: lightgreen;
+	color: darkgreen;
+}
+
+nav a:active {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
