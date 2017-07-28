@@ -27,7 +27,7 @@ nav a:active {
 	font-size: 1.5em;
 }
 
-.container {
+#blog-holder {
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
