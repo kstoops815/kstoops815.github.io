@@ -20,7 +20,7 @@ myBlogs.send();
 const blogDomString = (myThoughts) => {
 	let domString = "";
 	for(let i = 0; i < myThoughts.length; i++) {
-		domString+=		`<article class="cards col-md-4">`;
+		domString+=		`<article class="cards col-md-3">`;
 		domString+=		`<div class="title">`;
 		domString+=			`<h4>${myThoughts[i].title}</h4>`;
 		domString+=			`<span>${myThoughts[i].date}</span>`;
