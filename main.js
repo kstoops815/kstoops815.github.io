@@ -39,12 +39,11 @@ var allBlogs = [];
 // blogs.push(blog4);
 // blogs.push(blog5);
 
-console.log(allBlogs);
-
 function putMyBlogsInDom(){
 	var blogsData = JSON.parse(this.responseText);
 	console.log("blog posts", blogsData.blogs);
 	allBlogs = blogsData.blogs;
+	blogDomString(blogsData.blogs);
 }
 
 function ifLoadFails(){
@@ -57,26 +56,24 @@ myBlogs.addEventListener("error", ifLoadFails);
 myBlogs.open("GET", "blogPosts.json");
 myBlogs.send();
 
-var blogHolder = document.getElementById("blog-holder");
-
-for(var i = 0; i < allBlogs.length; i++) {
-
-	var currentblog = allBlogs[i];
-
+function blogDomString(myThoughts){
 	var domString = "";
+	for(var i = 0; i < myThoughts.length; i++) {
+		domString+=		`<article class="cards">`;
+		domString+=		`<div class="title">`;
+		domString+=			`<h4>${myThoughts[i].title}</h4>`;
+		domString+=			`<span>${myThoughts[i].date}</span>`;
+		domString+=		`</div>`;
+		domString+=		`<section>`;
+		domString+=			`<p>${myThoughts[i].content}</p>`;				
+		domString+=		`</section>`;
+		domString+=		`</article>`;
+	}
 
-	domString+=		'<article class="cards">';
-	domString+=		'<div class="title">';
-	domString+=			'<h4>' + currentblog.title + '</h4>';
-	domString+=			'<span>' + currentblog.date + '</span>';
-	domString+=		'</div>';
-	domString+=		'<section>';
-	domString+=			'<p>' + currentblog.content + '</p>';				
-	domString+=		'</section>';
-	domString+=		'</article>';
-
-	blogHolder.innerHTML += domString;
+	console.log("I am on the blog page.", domString);
+	writeToDom(domString);
 }
 
-console.log("I am on the blog page.")
-
+function writeToDom(entries){
+	document.getElementById("blogHolder").innerHTML = entries;
+}
