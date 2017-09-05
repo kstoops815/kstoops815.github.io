@@ -1,5 +1,3 @@
-let allBlogs = [];
-
 function putMyBlogsInDom(){
 	var blogsData = JSON.parse(this.responseText);
 	//console.log("blog posts", blogsData.blogs);
@@ -48,7 +46,7 @@ const writeToDom = (entries) => {
 document.getElementById("blogHolder").addEventListener("click", function(e){
 	console.log("click event", e);
 	blogBox(e);
-	printSelectedBlog(e);
+	printSelectedBlog();
 	});
 
 let selectedBlogCard;
@@ -61,19 +59,22 @@ const blogBox = (e) => {
 	} else if(e.target.classList.contains("cards")){
 		selectedBlogCard = e.target;
 	}
-	console.log("in blogBox function", selectedBlogCard);
+	return(selectedBlogCard);
+	//console.log("in blogBox function", selectedBlogCard);
 }
 
-const printSelectedBlog = (myStuff) => {
-	let blogHeading = selectedBlogCard.childNodes[0].childNodes;
-	let blogText = selectedBlogCard.childNodes[1].childNodes;
+const printSelectedBlog = () => {
+	let article = selectedBlogCard.childNodes[0].innerHTML;
+	let wholeBlog = document.getElementById("entireBlog");
+	wholeBlog.innerHTML = article;
+	// let blogText = selectedBlogCard.childNodes[1].childNodes;
 	// console.log("heading in printedSelectedBlog", selectedBlogCard.childNodes[0].childNodes[0]);
 	// console.log("date in printedSelectedBlog", selectedBlogCard.childNodes[0].childNodes[1].childNodes[0])//childNodes[0]);
 	// console.log("title contents", selectedBlogCard.childNodes[0].childNodes);
-	console.log("in printedSelectedBlog", blogHeading);
-	console.log("in printSelectedBlog", blogText);
+	console.log("in printedSelectedBlog", article);
+	
 
-	selectedBlogCard.childNodes[0].childNodes.innerText = `${forHeader}`;
+	//selectedBlogCard.childNodes[0].childNodes.innerText = `${forHeader}`;
 	//selectedBlogCard.childNodes[1].childNodes[0].innerHTML = `${function() {}orContent}`;
 	//console.log("blogHeading", blogHeading, "blogText", blogText );
 }
