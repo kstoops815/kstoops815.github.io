@@ -22,10 +22,8 @@ const blogDomString = (myThoughts) => {
 		domString+=			`<div id="blogHeading_${i}" class="title child">`;
 		domString+=				`<h4>${myThoughts[i].title}</h4>`;
 		domString+=				`<span>${myThoughts[i].date}</span>`;
-		domString+=			`</div>`;
-		domString+=			`<div id="blogContent_${i}" class="content child">`;
 		domString+=				`<p>${myThoughts[i].content}</p>`;				
-		domString+=			`</section>`;
+		domString+=			`</div>`;
 		domString+=			`</article>`;
 	}
 

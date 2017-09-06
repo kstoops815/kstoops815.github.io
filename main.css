@@ -23,3 +23,7 @@ justify-content: center;
 	height: 400px;
 	overflow: scroll;
 }
+
+#entireBlog {
+	border: black solid 3px;
+}
