@@ -67,6 +67,4 @@ const printSelectedBlog = () => {
 	wholeBlog.innerHTML = article;
 	
 	console.log("in printedSelectedBlog", article);
-	
-
-	
+}
