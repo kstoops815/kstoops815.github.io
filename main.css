@@ -26,4 +26,7 @@ justify-content: center;
 
 #entireBlog {
 	border: black solid 3px;
+	margin-left: 5%;
+	margin-right: 5%;
+	width: 90%;
 }
