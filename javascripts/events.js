@@ -12,28 +12,31 @@ const blogs = require("./blogs");
 
 $("#blogHolder").click((e) => {
 	blogBox(e);
-	printSelectedBlog();
+	printSelectedBlog(e);
 	$("#entireBlog").removeClass("hidden");
 	});
 
 let selectedBlogCard;
 
 const blogBox = (e) => {
-	if(e.target.classList.contains("child")){
-		selectedBlogCard = e.target.parentNode;
-	} else if(e.target.parentNode.parentNode.classList.contains("cards")){
-		selectedBlogCard = e.target.parentNode.parentNode;
-	} else if(e.target.classList.contains("cards")){
-		selectedBlogCard = e.target;
+	let target = $(e.target);
+	if(target.hasClass("child")){
+		//console.log("click event if", e);
+		selectedBlogCard = target.parent();
+		//console.log("click event if", selectedBlogCard);
+	} else if(target.parents().hasClass("cards")){
+		//console.log("first else if", e);
+		selectedBlogCard = target.parent().parent();
 	}
+	console.log("above return", selectedBlogCard);
 	return(selectedBlogCard);
+
+
 	//console.log("in blogBox function", selectedBlogCard);
 };
 
 const printSelectedBlog = () => {
-	let article = selectedBlogCard.childNodes[0].innerHTML;
-	let wholeBlog = document.getElementById("entireBlog");
-	wholeBlog.innerHTML = article;
-	
-	console.log("in printedSelectedBlog", article);
+	$("#entireBlog").html(selectedBlogCard.children());
 };
+
+module.exports = {};
