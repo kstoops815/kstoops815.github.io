@@ -36,7 +36,9 @@ const blogBox = (e) => {
 };
 
 const printSelectedBlog = () => {
-	$("#entireBlog").html(selectedBlogCard.children());
+	let article = selectedBlogCard.html();
+	console.log("article", article);
+ 	$("#entireBlog").html(article);
 };
 
 module.exports = {};
