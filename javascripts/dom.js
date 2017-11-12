@@ -5,7 +5,7 @@ const blogDomString = (myThoughts) => {
 	for(let i = 0; i < myThoughts.length; i++) {
 		domString+=		`<article class="cards col-md-3">`;
 		domString+=			`<div id="blogHeading_${i}" class="title child">`;
-		domString+=				`<h4>${myThoughts[i].title}</h4>`;
+		domString+=				`<h4 class="blogHeader">${myThoughts[i].title}</h4>`;
 		domString+=				`<span>${myThoughts[i].date}</span>`;
 		domString+=				`<p>${myThoughts[i].content}</p>`;				
 		domString+=			`</div>`;

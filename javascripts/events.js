@@ -3,10 +3,12 @@
 const dom = require("./dom");
 const blogs = require("./blogs");
 
-$("#blogHolder").click((e) => {
+$("body").click((e) => {
 	blogBox(e);
 	printSelectedBlog(e);
-	$("#entireBlog").removeClass("hidden");
+if($(e.target).parents().hasClass("cards") === false) {
+		clearSelectedBlog();
+	}
 	});
 
 let selectedBlogCard;
@@ -18,12 +20,17 @@ const blogBox = (e) => {
 	} else if(target.parents().hasClass("cards")){
 		selectedBlogCard = target.parent().parent();
 	}
+	$("#entireBlog").removeClass("hidden");	
 };
 
 const printSelectedBlog = () => {
 	let article = selectedBlogCard.html();
 	console.log("article", article);
  	$("#entireBlog").html(article);
+};
+
+const clearSelectedBlog = (e) => {
+	$("#entireBlog").addClass("hidden");	
 };
 
 module.exports = {};
