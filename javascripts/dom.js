@@ -17,11 +17,29 @@ const blogDomString = (myThoughts) => {
 };
 
 const writeToDom = (entries) => {
-	console.log(entries);
 	//document.getElementById("blogHolder").innerHTML = entries;
 	$("#blogHolder").html(entries);
 };
 
+const projectDomString = (projects) => {
+	let projectString = "";
+	for(let i = 0; i < projects.length; i++){
+	projectString += `<div id="project_${i}">`;
+	projectString +=	  `<h5 id="title_${i}>${projects[i].name}</h5>`;
+	projectString +=	  `<div class="screenshot">`;
+	projectString +=	  	 `<img class="projectImg" src=${projects[i].screenshot}>`;
+	projectString +=	   	 `<p>${projects[i].description}</p>`;
+	projectString +=		   `<p>You can view the code for this project at ${projects[i].github}</p>`;
+	projectString +=  	`</div>`;
+	projectString += `</div>`;
+	}	
+	printProjectsToDom(projectString);
+};
+
+const printProjectsToDom = (projectz) => {
+	$("#projects").html(projectz);
+};
 
 
-module.exports = {blogDomString};
+
+module.exports = {blogDomString, projectDomString};

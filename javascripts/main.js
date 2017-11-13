@@ -1,8 +1,22 @@
 "use strict";
 
-const blogs = require("./blogs");
-const dom = require("./dom");
 const events = require("./events");
+const apiKeys = require("./apiKeys");
+const firebaseApi = require("./firebaseApi");
+
+const main = () => {
+  apiKeys.apiKeys()
+    .then((results) => {
+      firebaseApi.setKey(results.firebaseKeys);
+      firebaseApi.getBlogs();
+      firebaseApi.getProjects();
+      events.doThisWhenClick();
+    });
+   
+};
+
+main();
+
 
 // dom.blogDomString(blogz);
 

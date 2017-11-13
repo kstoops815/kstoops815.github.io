@@ -1,4 +1,5 @@
 /*Fonts*/
+/*Mixins*/
 /*INDEX PAGE STYLING*/
 body {
   background-image: url("../images/website-background-index-light.jpg");
@@ -7,24 +8,41 @@ body {
 .font {
   font-family: "Roboto Slab", serif; }
 
-#mainHeader {
+.mainHeader {
   text-align: center;
   font-size: 500%; }
 
-#whoIAm {
+.pageSubHeader {
   font-size: 200%;
   text-align: center;
   margin-bottom: 5%; }
 
-#personalInfo {
+.pageInfo {
   margin: 0 auto;
   width: 60%;
   height: 20%;
   border: black solid 3px;
-  background-color: burlywood; }
-  #personalInfo p {
+  font-size: 1.25em;
+  background-color: burlywood;
+  text-align: center;
+  margin-bottom: 5%; }
+  .pageInfo p {
     text-align: center;
-    font-size: 1.25em;
+    margin: 10px; }
+
+/*PROFESSIONAL HISTORY*/
+#resume {
+  margin: 0 auto;
+  width: 60%;
+  height: 20%;
+  border: black solid 3px;
+  font-size: 1.25em;
+  background-color: burlywood;
+  text-align: center;
+  margin-bottom: 5%;
+  text-align: left; }
+  #resume p {
+    text-align: center;
     margin: 10px; }
 
 /*BLOG PAGE*/

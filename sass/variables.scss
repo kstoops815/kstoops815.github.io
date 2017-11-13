@@ -11,3 +11,20 @@ $robot: 'Roboto Slab', serif;
 $poppins: 'Poppins', sans-serif;
 $arimo: 'Arimo', sans-serif;
 $round: 'Varela Round', sans-serif;
+
+/*Mixins*/
+@mixin paragraphStyle {
+  margin: 0 auto;
+	width: 60%;
+	height: 20%;
+  border: $black solid 3px;
+  font-size: 1.25em;
+  background-color: $tan;
+	text-align: center;
+  margin-bottom: 5%;
+  
+  p {
+		text-align: center;
+		margin: 10px;
+	}
+}

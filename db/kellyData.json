@@ -35,5 +35,31 @@
 			"content": "<p>new blog goes here</p>",
 			"date": "new date goes here"
 		}
+	],
+		"projects": [
+			{
+				"name": "CSS Selectors0",
+				"description": "This project was completed in the early part of the Front End Development class. It was practice with CSS selectors.",
+				"screenshot": "../images/css-selectors.PNG",
+				"github": "https://github.com/kstoops815/css-selectors"
+			},
+			{
+				"name": "CSS Selectors1",
+				"description": "This project was completed in the early part of the Front End Development class. It was practice with CSS selectors.",
+				"screenshot": "../images/css-selectors.PNG",
+				"github": "https://github.com/kstoops815/css-selectors"
+			},
+			{
+				"name": "CSS Selectors2",
+				"description": "This project was completed in the early part of the Front End Development class. It was practice with CSS selectors.",
+				"screenshot": "../images/css-selectors.PNG",
+				"github": "https://github.com/kstoops815/css-selectors"
+			},
+			{
+				"name": "CSS Selectors3",
+				"description": "This project was completed in the early part of the Front End Development class. It was practice with CSS selectors.",
+				"screenshot": "../images/css-selectors.PNG",
+				"github": "https://github.com/kstoops815/css-selectors"
+			}
 	]
 }
