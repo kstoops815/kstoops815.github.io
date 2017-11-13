@@ -1,5 +1,7 @@
 "use strict";
 
+const firebaseApi = require("./firebaseApi");
+
 const apiKeys = () => {
   return new Promise((resolve, reject) => {
     $.ajax("../db/apiKeys.json").done((data) => {
@@ -11,6 +13,13 @@ const apiKeys = () => {
   });
 };
 
+const retrieveKeys = () => {
+  apiKeys().then((results) => {
+    firebaseApi.setKey(results.firebaseApi.apiKey);
+    firebase.initializeApp(results.firebaseApi.apiKey);
+  });
+};
+
 module.exports = {
-  apiKeys
+  retrieveKeys
 };
