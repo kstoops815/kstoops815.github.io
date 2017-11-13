@@ -1,15 +1,20 @@
 "use strict";
 
 const dom = require("./dom");
-const blogs = require("./blogs");
+const firebaseApi = require("./firebaseApi");
 
-$("body").click((e) => {
-	blogBox(e);
-	printSelectedBlog(e);
-if($(e.target).parents().hasClass("cards") === false) {
-		clearSelectedBlog();
-	}
-	});
+
+
+const doThisWhenClick = () => {
+	$("body").click((e) => {
+		blogBox(e);
+		printSelectedBlog(e);
+	if($(e.target).parents().hasClass("cards") === false) {
+			clearSelectedBlog();
+		}
+		});
+};
+
 
 let selectedBlogCard;
 
@@ -33,4 +38,10 @@ const clearSelectedBlog = (e) => {
 	$("#entireBlog").addClass("hidden");	
 };
 
-module.exports = {};
+// const eventsInitializer = () => {
+// 	showBlogs();
+// 	showProjects();
+// 	doThisWhenClick();
+// };
+
+module.exports = { doThisWhenClick };
