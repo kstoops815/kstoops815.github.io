@@ -5,9 +5,8 @@ const apiKeys = require("./apiKeys");
 const firebaseApi = require("./firebaseApi");
 
 const main = () => {
-  apiKeys.apiKeys()
+  apiKeys.retrieveKeys()
     .then((results) => {
-      firebaseApi.setKey(results.firebaseKeys);
       firebaseApi.getBlogs();
       firebaseApi.getProjects();
       events.doThisWhenClick();
