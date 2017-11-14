@@ -1,6 +1,7 @@
 "use strict";
 
 const firebaseApi = require("./firebaseApi");
+const events = require("./events");
 
 const apiKeys = () => {
   return new Promise((resolve, reject) => {
@@ -15,8 +16,11 @@ const apiKeys = () => {
 
 const retrieveKeys = () => {
   apiKeys().then((results) => {
-    firebaseApi.setKey(results.apiKey);
-    firebase.initializeApp(results.apiKey);
+    firebaseApi.setKey(results.firebaseKeys);
+    firebase.initializeApp(results.firebaseKeys);
+    // firebaseApi.getBlogs();
+    // firebaseApi.getProjects();
+    events.doThisWhenClick();
   });
 };
 

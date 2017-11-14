@@ -2,15 +2,17 @@
 
 const dom = require("./dom");
 
-let firebaseKey = "";
+let firebaseKeys = "";
 
 const setKey = (key) => {
-  firebaseKey = key;
+  firebaseKeys = key;
+  getBlogs();
+  getProjects();
 };
 
 const getBlogs = () => {
   return new Promise((resolve, reject) => {
-    $.ajax(`${firebaseKey.databaseURL}/blogs.json`)
+    $.ajax(`${firebaseKeys.databaseURL}/blogs.json`)
     .then((data) => {
       dom.blogDomString(data);
       resolve(data);
@@ -22,7 +24,7 @@ const getBlogs = () => {
 
   const getProjects = () => {
     return new Promise((resolve, reject) => {
-      $.ajax(`${firebaseKey.databaseURL}/projects.json`)
+      $.ajax(`${firebaseKeys.databaseURL}/projects.json`)
       .then((data) => {
         console.log('projects', data);
         dom.projectDomString(data);
