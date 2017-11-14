@@ -16,8 +16,8 @@ const apiKeys = () => {
 
 const retrieveKeys = () => {
   apiKeys().then((results) => {
-    firebaseApi.setKey(results.firebaseApi.apiKey);
-    firebase.initializeApp(results.firebaseApi.apiKey);
+    firebaseApi.setKey(results.apiKey);
+    firebase.initializeApp(results.apiKey);
   });
 };
 
@@ -170,11 +170,11 @@ const firebaseApi = require("./firebaseApi");
 const main = () => {
   apiKeys.retrieveKeys()
     .then((results) => {
+      console.log("in main", results);
       firebaseApi.getBlogs();
       firebaseApi.getProjects();
       events.doThisWhenClick();
     });
-   
 };
 
 main();

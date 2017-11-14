@@ -7,11 +7,11 @@ const firebaseApi = require("./firebaseApi");
 const main = () => {
   apiKeys.retrieveKeys()
     .then((results) => {
+      console.log("in main", results);
       firebaseApi.getBlogs();
       firebaseApi.getProjects();
       events.doThisWhenClick();
     });
-   
 };
 
 main();
