@@ -1,41 +1,41 @@
-"use strict";
+// "use strict";
 
-const dom = require("./dom");
+// const dom = require("./dom");
 
-let firebaseKeys = "";
+// let firebaseKeys = "";
 
-const setKey = (key) => {
-  firebaseKeys = key;
-  getBlogs();
-  getProjects();
-};
+// const setKey = (key) => {
+//   firebaseKeys = key;
+//   getBlogs();
+//   getProjects();
+// };
 
-const getBlogs = () => {
-  return new Promise((resolve, reject) => {
-    $.ajax(`${firebaseKeys.databaseURL}/blogs.json`)
-    .then((data) => {
-      dom.blogDomString(data);
-      resolve(data);
-      }).fail((error) => {
-      	reject(error);
-      });
-    });
-  };
+// const getBlogs = () => {
+//   return new Promise((resolve, reject) => {
+//     $.ajax(`${firebaseKeys.databaseURL}/blogs.json`)
+//     .then((data) => {
+//       dom.blogDomString(data);
+//       resolve(data);
+//       }).fail((error) => {
+//       	reject(error);
+//       });
+//     });
+//   };
 
-  const getProjects = () => {
-    return new Promise((resolve, reject) => {
-      $.ajax(`${firebaseKeys.databaseURL}/projects.json`)
-      .then((data) => {
-        console.log('projects', data);
-        dom.projectDomString(data);
-        resolve(data);
+//   const getProjects = () => {
+//     return new Promise((resolve, reject) => {
+//       $.ajax(`${firebaseKeys.databaseURL}/projects.json`)
+//       .then((data) => {
+//         console.log('projects', data);
+//         dom.projectDomString(data);
+//         resolve(data);
         
-      }).fail((error) => {
-        reject(error);
-      });
-    });
-  };
+//       }).fail((error) => {
+//         reject(error);
+//       });
+//     });
+//   };
 
-  module.exports = {
-    getBlogs, getProjects, setKey
-  };
+//   module.exports = {
+//     getBlogs, getProjects, setKey
+//   };

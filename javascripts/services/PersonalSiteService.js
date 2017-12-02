@@ -47,7 +47,7 @@ app.service("PersonalSiteService", function($http, $q, FIREBASE_CONFIG) {
 		return $http.get(`${FIREBASE_CONFIG.databaseURL}/blogs/${blogId}.json`);
 
 
-	}
+	};
 
 
 

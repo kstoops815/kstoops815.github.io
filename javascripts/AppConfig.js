@@ -1,6 +1,7 @@
 "use strict";
 
 app.config(function($routeProvider){
+	$routeProvider
 	.when("/about_me", {
 		templateUrl: "partials/about_me.html",
 		controller: "AboutCtrl"

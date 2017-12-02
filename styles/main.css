@@ -17,7 +17,12 @@ body {
   text-align: center;
   margin-bottom: 5%; }
 
+.infoHolder {
+  margin: 0 auto;
+  text-align: center; }
+
 .pageInfo {
+  margin: 0 auto;
   margin: 0 auto;
   width: 60%;
   height: 20%;
@@ -25,10 +30,9 @@ body {
   font-size: 1.25em;
   background-color: burlywood;
   text-align: center;
-  margin-bottom: 5%; }
-  .pageInfo p {
-    text-align: center;
-    margin: 10px; }
+  margin-bottom: 5%;
+  text-align: center;
+  margin: 10px; }
 
 /*PROFESSIONAL HISTORY*/
 #resume {
@@ -40,10 +44,9 @@ body {
   background-color: burlywood;
   text-align: center;
   margin-bottom: 5%;
+  text-align: center;
+  margin: 10px;
   text-align: left; }
-  #resume p {
-    text-align: center;
-    margin: 10px; }
 
 /*BLOG PAGE*/
 .myName {
@@ -85,8 +88,8 @@ body {
 
 /*CONTACT ME PAGE*/
 .socialMedia {
-  height: 50px;
-  width: 50px; }
+  height: 30px;
+  width: 30px; }
 
 #contactHeader {
   text-align: center;
@@ -96,3 +99,6 @@ body {
 .contact {
   margin: 0 auto;
   width: 50%; }
+
+.footer {
+  margin-bottom: 1%; }
