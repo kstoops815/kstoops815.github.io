@@ -1,17 +1,17 @@
-// "use strict";
+"use strict";
 
-// app.controller("BlogCtrl", function($scope, PersonalSiteService) {
-// 	$scope.blog = {};
+app.controller("BlogCtrl", function($scope, BlogsService) {
 
-// 		const showBlogs = () => {
-// 			PersonalSiteService.getBlogs().then((results) => {
-// 				$scope.blogs = results;
-// 			}).catch((error) => {
-// 				console.log("error in show Contacts", error);
-// 			});
-// 		};
+		const showBlogs = () => {
+			BlogsService.getBlogs().then((results) => {
+        $scope.blogs = results;
+        console.log("results in ctrl", $scope.blogs);
+			}).catch((error) => {
+				console.log("error in showBlogs", error);
+			});
+		};
 
-// 		showBlogs();
+		showBlogs();
 
 
 // 	const doThisWhenClick = () => {
@@ -50,4 +50,4 @@
 
 
 
-// });
+});

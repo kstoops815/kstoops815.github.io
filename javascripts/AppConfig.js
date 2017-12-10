@@ -6,8 +6,8 @@ app.config(function($routeProvider){
 		templateUrl: "partials/about_me.html",
 		controller: "AboutCtrl"
 	})
-	.when("/blog", {
-		templateUrl: "partials/blog.html",
+	.when("/blogs", {
+		templateUrl: "partials/blogs.html",
 		controller: "BlogCtrl"
 	})
 	.when("/professional_history", {
