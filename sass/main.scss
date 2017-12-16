@@ -25,12 +25,12 @@ body {
 
 .infoHolder {
 	margin: 0 auto;
-	text-align: center;
+	justify-content: center;
 }
 
 .pageInfo {
-	margin: 0 auto;
-	@include paragraphStyle
+	justify-content: center;
+	@include paragraphStyle;
 }
 
 /*PROFESSIONAL HISTORY*/
@@ -50,6 +50,7 @@ body {
 #blogPageDescription {
 	text-align: center;
 	font-size: 1.25em;
+	@include paragraphStyle;
 }
 
 #blogHolder {
@@ -62,7 +63,7 @@ body {
 	flex-wrap: wrap;
 	background-color: darkseagreen;
 	border: 3px solid darkgray;
-	margin:	2%;
+	margin:	1%;
 	width: 250px;
 	height: 250px;
 	overflow: scroll;
@@ -85,6 +86,11 @@ body {
 	}
 }
 
+.blogs {
+	margin: 0 auto;
+	justify-content: center;
+}
+
 .hidden {
 	display: none;
 }
@@ -96,13 +102,4 @@ body {
 	width: 30px;
 }
 
-#contactHeader {
-	text-align: center;
-	margin-top: 50px;
-	margin-bottom: 100px;
-}
 
-.contact {
-	margin: 0 auto;
-	width: 50%;
-}

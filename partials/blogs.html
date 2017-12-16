@@ -1,22 +1,23 @@
 <div>
-	<h1 class="myName">Kelly Stoops's Blog Page</h1>
+	<h1 class="myName">Kelly Stoops</h1>
+	<h4 class="pageSubHeader">My NSS Journey to Software Development</h4>
 
 	<div>
 		<p id="blogPageDescription">In June 2017, I embarked on a journey with Nashville Software School, beginning with the Web Development JumpStart class.  This was a 3-week, intensive introduction to HTML, CSS, and JavaScript. Then, on July 8, 2017, I began a year-long, part-time full stack web development bootcamp. Please feel free to read through my periodic blogs about my successes and my trials through this journey!</p>
 	</div>
-	<div class="container text-center allBlogs">
-		<div class="row">
+	<div class="container allBlogs">
+		<div class="row blogs">
 			<div id="entireBlog" class="col-md-8 col-md-offset-2" ng-if="highlightedBlog" ng-hide="notBlog">
 					<h4>{{highlightedBlog.title}}</h4>
 					<h5>{{highlightedBlog.date}}</h5>
 					<p>{{highlightedBlog.content}}</p>
 			</div>
-		</div>
-		<div ng-repeat="blog in blogs" ng-click="printSelectedBlog(blog)" class="col-sm-2 blog">
-			<div class="thumbnail">
-				<h4>{{blog.title}}</h4>
-				<h5>{{blog.date}}</h5>
-				<p>{{blog.content}}</p>
+			<div ng-repeat="blog in blogs" ng-click="printSelectedBlog(blog)" class="col-md-3 col-md-offset-2 blog">
+				<div class="thumbnail">
+					<h4>{{blog.title}}</h4>
+					<h5>{{blog.date}}</h5>
+					<p>{{blog.content}}</p>
+				</div>
 			</div>
 		</div>
 	</div>
