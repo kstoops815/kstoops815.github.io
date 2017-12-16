@@ -104,3 +104,13 @@ body {
 .socialMedia {
   height: 30px;
   width: 30px; }
+
+.projectCard {
+  flex-wrap: wrap;
+  border: 3px solid darkgray;
+  margin: 1%;
+  width: 400px;
+  height: 400px;
+  overflow: scroll; }
+  .projectCard h4 {
+    text-align: center; }

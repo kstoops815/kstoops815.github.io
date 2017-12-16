@@ -80,16 +80,28 @@
             "github": "https://github.com/kstoops815/angular-contacts"
         },
         "project2": {
-            "name": "CSS Selectors2",
-            "description": "This project was completed in the early part of the Front End Development class. It was practice with CSS selectors.",
-            "screenshot": "../images/css-selectors.PNG",
-            "github": "https://github.com/kstoops815/css-selectors"
+            "name": "Seasonal Sales",
+            "description": "The instructions for this project were to build a web page that lists all of the products, the name of the department it's in, and the price. Additionally, put a <select> element at the top of the page that contains all possible values of the season_discount key in the categories file. As soon as you select one of the seasons, all prices on the page should immediately be discounted by the corresponding percentage. For example, when Spring is chosen, all products in the corresponding Household category should have their prices updated with a 15% discount off the base price.",
+            "screenshot": "../images/seasonal-sales.PNG",
+            "github": "https://github.com/kstoops815/seasonal-sales"
         },
         "project3": {
-            "name": "CSS Selectors3",
-            "description": "This project was completed in the early part of the Front End Development class. It was practice with CSS selectors.",
-            "screenshot": "../images/css-selectors.PNG",
-            "github": "https://github.com/kstoops815/css-selectors"
+            "name": "Toddler Tether",
+            "description": "This was our first group project during the front-end web development class. We were instructed to build a website for a fictitious product company. The team should decide what the name of the company is, and what types of products it manufactures. Be creative and have fun. We used GitHub to facilitate our collaboration.",
+            "screenshot": "../images/toddler-tether.PNG",
+            "github": "https://github.com/nss-evening-cohort-06/company-x-fivealive"
+        },
+        "project4": {
+            "name": "Theme Park",
+            "description": "As a group, we were tasked with building a website that served as a map for a theme park. We were provided the JSON file and the GitHub project cards. We were instructed to stick exactly to the cards, with no creative license at all.",
+            "screenshot": "../images/theme-park.PNG",
+            "github": "https://github.com/nss-evening-cohort-06/theme-park-advocates"
+        },
+        "project5": {
+            "name": "Bully Tracker",
+            "description": "The Bully Tracker application is my front-end capstone project. It is build using AngularJS as the framework. Other technologies used are UI Bootstrap, Sass, and Firebase CRUD. The deployed website for this project is https://bully-tracker.firebaseapp.com/#!/home",
+            "screenshot": "../images/bully-tracker.PNG",
+            "github": "https://github.com/kstoops815/front-end-capstone"
         }
     }
 }
