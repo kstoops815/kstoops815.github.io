@@ -22,8 +22,6 @@ app.service("ProjectsService", function($http, $q, FIREBASE_CONFIG) {
 		return $http.post(`${FIREBASE_CONFIG.databaseURL}/projects.json`, JSON.stringify(project));
 	};
 
-
-
   return {getProjects, postProject};
 
 });

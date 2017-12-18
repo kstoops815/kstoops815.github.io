@@ -113,4 +113,5 @@ body {
   height: 400px;
   overflow: scroll; }
   .projectCard h4 {
-    text-align: center; }
+    text-align: center;
+    font-weight: bold; }

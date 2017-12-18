@@ -63,15 +63,17 @@
         },
         "blog12": {
             "title": "AngularJS",
-            "content": "Every time we change concepts, I feel like I have started over in an alternate universe. It is definitely no different with AngularJS. Learning a new syntax protocol every other month is a lot to remember. Even though we are learning a new framework, I feel as though I am have made a lot of progress throughout this program. While I haven't necessarily felt a light switch turn on, I have felt myself steadily increasing my capacity for being able to think through the problems and write more concise, cleaner code. One thing that I am having a hard time wrapping my mind around is conditional statements and click events in AngularJS. Again, I think this is a syntax thing. It feels weird to separate the if (conditional) and what happens if the condition is met. In the particular project we have been working on, a My Contacts app, the instructions were to have a star outline on every contact card. When clicked, the star should be filled in to show that it is a favorite. Normally, I would write a conditional, that, in summary, printed one or the other icons to the DOM. With AngularJS, I wrote two separate functions, one to change the value to false and the other to true. I then had to write both buttons in the html with an ng-if to evaluate whether or not the current value was true or false, then print to the DOM the correct button. I then used an ng-click to invoke the correct function to change the value when the button was clicked. The logic feels more complicated, but I am sure as I use it more, I will understand and be able to employ that logic more easily. I am very happy to be learning AngularJS, as I feel like it will be very valuable in my future."
+            "content": "Every time we change concepts, I feel like I have started over in an alternate universe. It is definitely no different with AngularJS. Learning a new syntax protocol every other month is a lot to remember. Even though we are learning a new framework, I feel as though I am have made a lot of progress throughout this program. While I haven't necessarily felt a light switch turn on, I have felt myself steadily increasing my capacity for being able to think through the problems and write more concise, cleaner code. One thing that I am having a hard time wrapping my mind around is conditional statements and click events in AngularJS. Again, I think this is a syntax thing. It feels weird to separate the if (conditional) and what happens if the condition is met. In the particular project we have been working on, a My Contacts app, the instructions were to have a star outline on every contact card. When clicked, the star should be filled in to show that it is a favorite. Normally, I would write a conditional, that, in summary, printed one or the other icons to the DOM. With AngularJS, I wrote two separate functions, one to change the value to false and the other to true. I then had to write both buttons in the html with an ng-if to evaluate whether or not the current value was true or false, then print to the DOM the correct button. I then used an ng-click to invoke the correct function to change the value when the button was clicked. The logic feels more complicated, but I am sure as I use it more, I will understand and be able to employ that logic more easily. I am very happy to be learning AngularJS, as I feel like it will be very valuable in my future.",
+            "date": "November 20, 2017"
         }
     },
     "projects": {
         "project0": {
-            "name": "CSS Selectors0",
-            "description": "This project was completed in the early part of the Front End Development class. It was practice with CSS selectors.",
-            "screenshot": "../images/css-selectors.PNG",
-            "github": "https://github.com/kstoops815/css-selectors"
+            "name": "Adopt My Cats",
+            "description": "",
+            "description": "This project was one of my first experiences using an API. We were instructed to build a website that allows the user to load in the number of cats that are currently available, display them on my screen, then be able to filter them based on whether or not they are considered disabled (have 10 toes or less).",
+            "screenshot": "../images/cats.PNG",
+            "github": "https://github.com/kstoops815/adoptMyCats"
         },
         "project1": {
             "name": "Contacts",
