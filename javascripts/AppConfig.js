@@ -3,8 +3,7 @@
 app.config(function($routeProvider){
 	$routeProvider
 	.when("/about_me", {
-		templateUrl: "partials/about_me.html",
-		controller: "AboutCtrl"
+		templateUrl: "partials/about_me.html"
 	})
 	.when("/blogs", {
 		templateUrl: "partials/blogs.html",
@@ -12,7 +11,6 @@ app.config(function($routeProvider){
 	})
 	.when("/professional_history", {
 		templateUrl: "partials/professional_history.html",
-		controller: "ProfessionalCtrl"
 	})
 	.when("/projects", {
 		templateUrl: "partials/projects.html",
