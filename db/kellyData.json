@@ -82,10 +82,10 @@
             "github": "https://github.com/kstoops815/angular-contacts"
         },
         "project2": {
-            "name": "Seasonal Sales",
-            "description": "The instructions for this project were to build a web page that lists all of the products, the name of the department it's in, and the price. Additionally, put a <select> element at the top of the page that contains all possible values of the season_discount key in the categories file. As soon as you select one of the seasons, all prices on the page should immediately be discounted by the corresponding percentage. For example, when Spring is chosen, all products in the corresponding Household category should have their prices updated with a 15% discount off the base price.",
-            "screenshot": "../images/seasonal-sales.PNG",
-            "github": "https://github.com/kstoops815/seasonal-sales"
+            "name": "Movie History",
+            "description": "This application uses an API from The Movie Database. The user can search for a movie, rate a movie, and add a movie to a wishlist. This project was created using AngularJS. It has been deployed through Firebase and can be viewed at https://angular-movie-history-20142.firebaseapp.com/#!/auth",
+            "screenshot": "../images/movie-history.PNG",
+            "github": "https://github.com/kstoops815/angular-movie-history"
         },
         "project3": {
             "name": "Toddler Tether",
