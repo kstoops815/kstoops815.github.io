@@ -1,0 +1,15 @@
+<div>
+	<h1 class="mainHeader">Kelly Stoops</h1>
+	<h4 class-"pageSubHeader">Projects</h4>
+</div>
+<div id="projects">
+	<div ng-repeat="project in projects" ng-click="" class="col-sm-4 project">
+		<div class="thumbnail projectCard">
+			<h4>{{project.name}}</h4>
+			<p>{{project.description}}</p>
+			<img src="{{project.screenshot}}"></img>
+			<a>{{project.github}}</a>
+		</div>
+	</div>
+</div>
+	
